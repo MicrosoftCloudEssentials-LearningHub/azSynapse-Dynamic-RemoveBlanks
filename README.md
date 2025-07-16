@@ -30,8 +30,8 @@ Last updated: 2025-07-16
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
 - [Overview](#overview)
-    - [SQL Pools](#sql-pools)
-    - [Synapse Views](#synapse-views)
+  - [SQL Pools](#sql-pools)
+  - [Synapse Views](#synapse-views)
 - [How to Dynamically Remove Space in field name](#how-to-dynamically-remove-space-in-field-name)
 
 </details>
@@ -70,4 +70,3 @@ SQL pools in Azure Synapse Analytics come in two main types:
   <p>Refresh Date: 2025-07-16</p>
 </div>
 <!-- END BADGE -->
-

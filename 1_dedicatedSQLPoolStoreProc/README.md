@@ -117,7 +117,7 @@ Last updated: 2025-07-16
 
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/3e6fc8a1-ad34-4a0b-8940-ae27b303190d">
 
-  ## Create Views with Modified Tables/Column Names
+## Create Views with Modified Tables/Column Names
 
 1. **Create a Stored Procedure to Remove Spaces from Column Names**: Use the following script to create a stored procedure that removes spaces from column names and creates views. Click [here to see the .sql file](https://github.com/MicrosoftCloudEssentials-LearningHub/Demos-ScenariosHub/blob/main/0_Azure/2_AzureAnalytics/1_SynapseAnalytics/demos/2_synapse_views_dynamically_remove_space/1_dedicatedSQLPoolStoreProc/src/store-procedure-clean-up.sql).
 
