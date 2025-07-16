@@ -62,8 +62,7 @@ SQL pools in Azure Synapse Analytics come in two main types:
 ## How to Dynamically Remove Space in field name
 
 - For an overview of Serverless SQL Pool (built-in), please read this [overview](./0_serverlessSQLPool)
-- For information on Dedicated SQL Pool (formerly SQL DW), click [here](./1_dedicatedSQLPoolStoreProc)
-
+- Please visit [Dedicated SQL Pool](./1_dedicatedSQLPoolStoreProc) (formerly SQL DW) for information.
 
 <!-- START BADGE -->
 <div align="center">
