@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-01-26
+Last updated: 2025-07-16
 
 ----------
 
@@ -15,12 +15,12 @@ Last updated: 2025-01-26
 
 - [Overview](#overview)
 - [Demo](#demo)
-   - [Set Up a Synapse Workspace](#set-up-a-synapse-workspace)
-   - [Upload Sample Data to Storage Account](#upload-sample-data-to-storage-account)
-   - [Create User Database](#create-user-database)
-   - [Create an External Data Source and File Format](#create-an-external-data-source-and-file-format)
-   - [Create an External Table](#create-an-external-table)
-   - [Create Views with Modified Tables/Column Names](#create-views-with-modified-tablescolumn-names)
+  - [Set Up a Synapse Workspace](#set-up-a-synapse-workspace)
+  - [Upload Sample Data to Storage Account](#upload-sample-data-to-storage-account)
+  - [Create User Database](#create-user-database)
+  - [Create an External Data Source and File Format](#create-an-external-data-source-and-file-format)
+  - [Create an External Table](#create-an-external-table)
+  - [Create Views with Modified Tables/Column Names](#create-views-with-modified-tablescolumn-names)
 
 </details>
 
@@ -34,7 +34,6 @@ Last updated: 2025-01-26
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | **External Tables** | - Reference data stored in external sources like Azure Data Lake Storage, Azure Blob Storage, Azure Cosmos DB, etc. <br> - Data is not physically stored in the SQL pool. <br> - Useful for querying large datasets without loading them into the SQL pool. | - Querying large datasets stored externally. <br> - Performing data analysis on data stored in various formats.    |
 | **Temporary Tables**| - Created and used within the scope of a session. <br> - Data is stored temporarily and is dropped when the session ends. <br> - Useful for intermediate data processing and transformations.                      | - Storing intermediate results during complex queries. <br> - Performing temporary data transformations and aggregations. |
-
 
 ## Demo
 
@@ -109,7 +108,6 @@ Last updated: 2025-01-26
 
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/13f22e3b-7c68-4ed2-8a56-2752a5033869" />
 
-
 2. **Create an External File Format**: As part of the same flow, define the format of the CSV file.
 
      ```sql
@@ -125,7 +123,6 @@ Last updated: 2025-01-26
      ```
 
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/40a4c6a2-bc51-49ba-9361-bec6eb0edb9e" />
-
 
 ### Create an External Table
 
@@ -166,7 +163,6 @@ Last updated: 2025-01-26
 
      <img width="240" alt="image" src="https://github.com/user-attachments/assets/9eb9e379-30a7-42b8-966d-8f8c96b31395" />
 
-
 3. **Query the External Table**:  You can now query the external table to see the sample data.
 
      ```sql
@@ -176,6 +172,7 @@ Last updated: 2025-01-26
 ### Create Views with Modified Tables/Column Names
 
 > This script is designed to dynamically create views for each table in a database, renaming columns to remove spaces. It starts by creating a temporary table to store the SQL statements and assigns a unique row number to each statement. The script then loops through these statements, executing each one in turn. Finally, it cleans up by dropping the temporary table.
+>
 > 1. **Temporary Table Creation**: A temporary table `#CreateViewStatements` is created to store the dynamic SQL statements and their corresponding row numbers. <br/>
 > 2. **Inserting SQL Statements**: The script generates SQL statements to create views for each table in the database. It uses the `INFORMATION_SCHEMA.COLUMNS` to get the table and column names, renaming columns to remove spaces. These statements, along with a row number, are inserted into the temporary table. <br/>
 > 3. **Variable Declaration**: Variables are declared to hold the current SQL statement, the current row number, and the maximum row number. <br/>
@@ -222,7 +219,6 @@ END;
 DROP TABLE #CreateViewStatements;
 ```
 
-
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/2654dcb8-d843-4000-9b32-b36f14f2a7a8" />
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/6f270523-adf1-4ca3-b80c-b5decd624459" />
@@ -231,7 +227,7 @@ DROP TABLE #CreateViewStatements;
    
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-31-limegreen" alt="Total views">
+  <img src="https://img.shields.io/badge/Total%20views-1280-limegreen" alt="Total views">
   <p>Refresh Date: 2025-07-16</p>
 </div>
 <!-- END BADGE -->

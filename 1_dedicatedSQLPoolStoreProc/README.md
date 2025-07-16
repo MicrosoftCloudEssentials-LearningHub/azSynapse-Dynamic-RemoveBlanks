@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-01-26
+Last updated: 2025-07-16
 
 ----------
 
@@ -117,7 +117,7 @@ Last updated: 2025-01-26
 
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/3e6fc8a1-ad34-4a0b-8940-ae27b303190d">
 
-  ## Create Views with Modified Tables/Column Names
+## Create Views with Modified Tables/Column Names
 
 1. **Create a Stored Procedure to Remove Spaces from Column Names**: Use the following script to create a stored procedure that removes spaces from column names and creates views. Click [here to see the .sql file](https://github.com/MicrosoftCloudEssentials-LearningHub/Demos-ScenariosHub/blob/main/0_Azure/2_AzureAnalytics/1_SynapseAnalytics/demos/2_synapse_views_dynamically_remove_space/1_dedicatedSQLPoolStoreProc/src/store-procedure-clean-up.sql).
 
@@ -241,7 +241,7 @@ Last updated: 2025-01-26
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-31-limegreen" alt="Total views">
+  <img src="https://img.shields.io/badge/Total%20views-1280-limegreen" alt="Total views">
   <p>Refresh Date: 2025-07-16</p>
 </div>
 <!-- END BADGE -->

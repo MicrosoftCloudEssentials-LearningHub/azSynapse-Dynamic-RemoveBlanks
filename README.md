@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-01-24
+Last updated: 2025-07-16
 
 ----------
 
@@ -30,13 +30,13 @@ Last updated: 2025-01-24
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
 - [Overview](#overview)
-    - [SQL Pools](#sql-pools)
-    - [Synapse Views](#synapse-views)
+  - [SQL Pools](#sql-pools)
+  - [Synapse Views](#synapse-views)
 - [How to Dynamically Remove Space in field name](#how-to-dynamically-remove-space-in-field-name)
 
 </details>
 
-## Overview 
+## Overview
 
 > `Azure Synapse Analytics` is an integrated analytics service that accelerates time to insight across data warehouses and big data systems.
 > It combines the `best of SQL technologies used in enterprise data warehousing`, Spark technologies for big data, and data integration
@@ -62,13 +62,11 @@ SQL pools in Azure Synapse Analytics come in two main types:
 ## How to Dynamically Remove Space in field name
 
 - For an overview of Serverless SQL Pool (built-in), please read this [overview](./0_serverlessSQLPool)
-- For information on Dedicated SQL Pool (formerly SQL DW), click [here](./1_dedicatedSQLPoolStoreProc)
-
+- Please visit [Dedicated SQL Pool](./1_dedicatedSQLPoolStoreProc) (formerly SQL DW) for information.
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-31-limegreen" alt="Total views">
+  <img src="https://img.shields.io/badge/Total%20views-1280-limegreen" alt="Total views">
   <p>Refresh Date: 2025-07-16</p>
 </div>
 <!-- END BADGE -->
-
