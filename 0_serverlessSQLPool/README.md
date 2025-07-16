@@ -229,7 +229,9 @@ DROP TABLE #CreateViewStatements;
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/7a5a26ff-9a5f-4c98-a337-b64ce0cc1699" />
    
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-31-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->
