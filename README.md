@@ -36,7 +36,7 @@ Last updated: 2025-07-16
 
 </details>
 
-## Overview 
+## Overview
 
 > `Azure Synapse Analytics` is an integrated analytics service that accelerates time to insight across data warehouses and big data systems.
 > It combines the `best of SQL technologies used in enterprise data warehousing`, Spark technologies for big data, and data integration
