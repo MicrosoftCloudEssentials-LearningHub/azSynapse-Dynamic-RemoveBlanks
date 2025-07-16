@@ -64,9 +64,11 @@ SQL pools in Azure Synapse Analytics come in two main types:
 - For an overview of Serverless SQL Pool (built-in), please read this [overview](./0_serverlessSQLPool)
 - For information on Dedicated SQL Pool (formerly SQL DW), click [here](./1_dedicatedSQLPoolStoreProc)
 
+
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-31-limegreen" alt="Total views">
   <p>Refresh Date: 2025-07-16</p>
 </div>
 <!-- END BADGE -->
+
