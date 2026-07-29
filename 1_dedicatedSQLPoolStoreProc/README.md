@@ -1,16 +1,7 @@
-# Dedicated SQL Pool: <br/> Store Procedure Dynamically Remove Space - Overview
-
-Costa Rica
-
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) 
-[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [Cloud2BR OSS - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
-
-Last updated: 2025-07-16
-
-----------
+# Dedicated SQL Pool: Dynamically Remove Spaces
 
 <details>
-<summary><b>Table of Content </b> (Click to expand)</summary>
+<summary><b>Table of contents</b> (click to expand)</summary>
 
 - [Set Up a Synapse Workspace](#set-up-a-synapse-workspace)
 - [Create a Dedicated SQL Pool](#create-a-dedicated-sql-pool)
@@ -42,16 +33,16 @@ Last updated: 2025-07-16
    - In Synapse Studio, go to the `Manage` hub by clicking on the `Manage` icon in the left navigation pane.
    - Under `Analytics pools`, select `SQL pools` and click on the `+ New` button.
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/6d96ac07-57f1-4efd-917b-200a43091311" />
+    <img width="550" alt="Create a dedicated SQL pool in Synapse Studio" src="https://github.com/user-attachments/assets/6d96ac07-57f1-4efd-917b-200a43091311" />
 
    - Enter the following details:
      - **SQL pool name**: Enter a name for your SQL pool (e.g., `SQLPOOL1`).
      - **Performance level**: Choose a performance level (e.g., `DW1000c`).
    - Click `Review + create` and then `Create` to provision the dedicated SQL pool.
   
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/89ca427b-20f1-4df5-ae20-847b76cdd9a7" />
+    <img width="550" alt="Configure the dedicated SQL pool" src="https://github.com/user-attachments/assets/89ca427b-20f1-4df5-ae20-847b76cdd9a7" />
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/b8b2c94b-76e6-4ced-8812-c386c6a55f32" />
+    <img width="550" alt="Review the dedicated SQL pool configuration" src="https://github.com/user-attachments/assets/b8b2c94b-76e6-4ced-8812-c386c6a55f32" />
 
 ## Create Tables with Spaces in Names and Columns
 
@@ -61,7 +52,7 @@ Last updated: 2025-07-16
 
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/3382ea4a-06eb-4e32-93d9-569cef7fc2f5" />
 
-2. **Create Sample Tables**: Use the following script to create tables with spaces in their names and columns. Click [here to see the .sql file](https://github.com/MicrosoftCloudEssentials-LearningHub/Demos-ScenariosHub/blob/main/0_Azure/2_AzureAnalytics/1_SynapseAnalytics/demos/2_synapse_views_dynamically_remove_space/1_dedicatedSQLPoolStoreProc/src/create-sample-tables.sql).
+2. **Create Sample Tables**: Use the following script to create tables with spaces in their names and columns. Open the complete [`create-sample-tables.sql`](https://github.com/Cloud2BR-MSFTLearningHub/azSynapse-Dynamic-RemoveBlanks/blob/main/1_dedicatedSQLPoolStoreProc/src/create-sample-tables.sql) file in GitHub.
 
     ```sql
     -- Create sample tables with spaces in names
@@ -111,14 +102,14 @@ Last updated: 2025-07-16
 
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/1d02fd74-7246-4aa6-8247-b98619d70c47" />
 
-> [!NOTE]
-> Once you refresh, the tables will be visible:
+!!! note
+    Refresh the workspace explorer after running the script to display the tables.
 
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/3e6fc8a1-ad34-4a0b-8940-ae27b303190d">
 
 ## Create Views with Modified Tables/Column Names
 
-1. **Create a Stored Procedure to Remove Spaces from Column Names**: Use the following script to create a stored procedure that removes spaces from column names and creates views. Click [here to see the .sql file](https://github.com/MicrosoftCloudEssentials-LearningHub/Demos-ScenariosHub/blob/main/0_Azure/2_AzureAnalytics/1_SynapseAnalytics/demos/2_synapse_views_dynamically_remove_space/1_dedicatedSQLPoolStoreProc/src/store-procedure-clean-up.sql).
+1. **Create a Stored Procedure to Remove Spaces from Column Names**: Use the following script to create a stored procedure that removes spaces from column names and creates views. Open the complete [`store-procedure-clean-up.sql`](https://github.com/Cloud2BR-MSFTLearningHub/azSynapse-Dynamic-RemoveBlanks/blob/main/1_dedicatedSQLPoolStoreProc/src/store-procedure-clean-up.sql) file in GitHub.
 
     ```sql
      CREATE PROCEDURE RemoveSpacesFromColumnNames
@@ -214,7 +205,7 @@ Last updated: 2025-07-16
 2. **Execute the Stored Procedure**: Click on `Run`, to create the stored procedure.
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/17be4e92-9816-43ff-9cc3-23d9737a9056" />
-    
+
     | Before | After |
     | --- | --- |
     | <img width="550" alt="image" src="https://github.com/user-attachments/assets/d081329c-b5f6-452f-826b-50a2dd614a1c" /> | <img width="550" alt="image" src="https://github.com/user-attachments/assets/588aa482-ac5c-4013-b926-e01db58d1733" /> |
@@ -233,14 +224,11 @@ Last updated: 2025-07-16
 | --- | --- |
 | <img width="360" alt="image" src="https://github.com/user-attachments/assets/b0de5118-bf67-4f75-9dd7-2ae5ba33cb28" /> | <img width="360" alt="image" src="https://github.com/user-attachments/assets/ef9c6d3a-1d45-4d37-9977-431cf8b774d0" /> |
 
-> [!NOTE]
-> Once you refresh, the views will be visible:
+!!! note
+    Refresh the workspace explorer after running the procedure to display the views.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/e0191419-29cc-448a-a14f-a76da221b015" />
 
-<!-- START BADGE -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1280-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-16</p>
-</div>
-<!-- END BADGE -->
+[Back to the Azure Synapse overview](https://cloud2br-msftlearninghub.github.io/azSynapse-Dynamic-RemoveBlanks/)
+
+[Review the serverless SQL pool walkthrough](https://cloud2br-msftlearninghub.github.io/azSynapse-Dynamic-RemoveBlanks/serverless/)

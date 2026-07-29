@@ -1,16 +1,7 @@
-# Serverless SQL Pool: <br/> Dynamically Remove Space - Overview 
-
-Costa Rica
-
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) 
-[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [Cloud2BR OSS - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
-
-Last updated: 2025-07-16
-
-----------
+# Serverless SQL Pool: Dynamically Remove Spaces
 
 <details>
-<summary><b>Table of Content </b> (Click to expand)</summary>
+<summary><b>Table of contents</b> (click to expand)</summary>
 
 - [Overview](#overview)
 - [Demo](#demo)
@@ -23,11 +14,10 @@ Last updated: 2025-07-16
 
 </details>
 
-## Overview 
+## Overview
 
-> [!IMPORTANT]
-> The serverless SQL pool in Azure Synapse Analytics `does not support internal tables. It primarily supports external tables and temporary tables`.
-> For `internal tables,` you would need to use a `dedicated SQL pool` in Synapse Analytics, which allows you to `create and manage internal tables with local storage`.
+!!! important
+    Serverless SQL pools do not support internal tables. They primarily support external and temporary tables. Use a dedicated SQL pool when you need internal tables with local storage.
 
 | **Table Type**      | **Description**                                                                                                                                                                                                 | **Use Cases**                                                                                                      |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -53,11 +43,10 @@ Last updated: 2025-07-16
 
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/a368036b-c859-47fc-a1c5-d045b6910790" />
 
-### Upload Sample Data to Storage Account 
+### Upload Sample Data to Storage Account
 
-> [!IMPORTANT]
-> For this demo, `we'll be using the same storage account created with the synpase workspace`.
-> `CREATE EXTERNAL DATA SOURCE is not supported in the master database of the serverless` SQL pool. Instead, you `need to create a user database and perform the operations there`.
+!!! important
+    This demo uses the storage account created with the Synapse workspace. `CREATE EXTERNAL DATA SOURCE` is not supported in the serverless SQL pool's `master` database, so create a user database first and perform the remaining operations there.
 
 1. Create a Container in the Storage Account:
    - Go to the Azure portal and navigate to your storage account.
@@ -67,7 +56,7 @@ Last updated: 2025-07-16
    - Set the `Public access level` to your preference (e.g., Private).
    - Click `Create`.
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/3060045f-a515-4a27-a4c6-80bd2ba3d9ab" />
+    <img width="550" alt="Create a storage container in the Azure portal" src="https://github.com/user-attachments/assets/3060045f-a515-4a27-a4c6-80bd2ba3d9ab" />
 
 2. Navigate to the Container:
    - In the Azure portal, go to your storage account.
@@ -78,7 +67,7 @@ Last updated: 2025-07-16
    - In the upload blade, click on `Browse` to select the sample CSV file from your local machine.
    - Choose the file, click `Upload` to upload the file to the container.
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/4fa8d1c8-e5a0-4d65-a3b5-83bf7c7118c1" />
+    <img width="550" alt="Upload sample data to the storage container" src="https://github.com/user-attachments/assets/4fa8d1c8-e5a0-4d65-a3b5-83bf7c7118c1" />
 
 ### Create User Database
 
@@ -91,7 +80,7 @@ Last updated: 2025-07-16
      <img width="884" alt="image" src="https://github.com/user-attachments/assets/f24a4d45-6bee-46ea-bccc-b5f893044c01" />
 
 2. Switch to the User Database: Use the newly created database.
-   
+
 ### Create an External Data Source and File Format
 
 1. Integrate this task with the previous step by establishing the external data source within the user database.
@@ -150,12 +139,12 @@ Last updated: 2025-07-16
          FILE_FORMAT = {File Format Name}
      );
      ```
-     
+
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/841cc8b7-4c2d-4c9a-975c-fec4bb3326d8" />
 
-2. Confirm the existence of the tables 
-     
-     ```sql 
+2. Confirm the existence of the tables
+
+     ```sql
      SELECT * FROM sys.tables 
      WHERE name IN ('Product Data', 'Employee Data');
      ```
@@ -223,10 +212,7 @@ DROP TABLE #CreateViewStatements;
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/6f270523-adf1-4ca3-b80c-b5decd624459" />
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/7a5a26ff-9a5f-4c98-a337-b64ce0cc1699" />
-   
-<!-- START BADGE -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1280-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-16</p>
-</div>
-<!-- END BADGE -->
+
+[Back to the Azure Synapse overview](https://cloud2br-msftlearninghub.github.io/azSynapse-Dynamic-RemoveBlanks/)
+
+[Continue to the dedicated SQL pool walkthrough](https://cloud2br-msftlearninghub.github.io/azSynapse-Dynamic-RemoveBlanks/dedicated/)

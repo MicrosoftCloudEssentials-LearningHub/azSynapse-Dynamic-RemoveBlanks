@@ -1,19 +1,10 @@
-# Azure Synapse: <br/> Dynamically Remove Space - Overview
+# Azure Synapse: Dynamically Remove Spaces
 
-Costa Rica
+!!! important
+  These demos are intended as practical examples. For official guidance and support, refer to [Microsoft documentation](https://learn.microsoft.com/azure/synapse-analytics/) or [Microsoft Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME).
 
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) 
-[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [Cloud2BR OSS - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
-
-Last updated: 2025-07-16
-
-----------
-
-> [!IMPORTANT]
-> Please note that `these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
-
-> [!NOTE]
-> Both the `table name and column name fields will be reviewed`. We'll remove any blank spaces to create the view.
+!!! note
+  The examples inspect table and column names, remove spaces, and create normalized views.
 
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
@@ -26,20 +17,18 @@ Last updated: 2025-07-16
 </details>
 
 <details>
-<summary><b>Table of Content </b> (Click to expand)</summary>
+<summary><b>Table of contents</b> (click to expand)</summary>
 
 - [Overview](#overview)
   - [SQL Pools](#sql-pools)
   - [Synapse Views](#synapse-views)
-- [How to Dynamically Remove Space in field name](#how-to-dynamically-remove-space-in-field-name)
+- [Dynamically remove spaces from names](#dynamically-remove-spaces-from-names)
 
 </details>
 
 ## Overview
 
-> `Azure Synapse Analytics` is an integrated analytics service that accelerates time to insight across data warehouses and big data systems.
-> It combines the `best of SQL technologies used in enterprise data warehousing`, Spark technologies for big data, and data integration
-> capabilities to provide a unified experience for data professionals
+Azure Synapse Analytics is an integrated analytics service that accelerates time to insight across data warehouses and big data systems. It combines enterprise data warehousing, Spark-based big data processing, and data integration in a unified experience.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/9a753e36-e229-4da7-8a87-a5c21ddd70f9"> <br/>
 From [Microsoft Official Documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
@@ -55,17 +44,9 @@ SQL pools in Azure Synapse Analytics come in two main types:
 
 ### Synapse Views
 
-> **Synapse views** are `virtual tables created by querying data from one or more tables in Azure Synapse Analytics.
-> They don't store data themselves but provide a way to simplify complex queries and reuse them`. Views can be created over both dedicated and serverless SQL pools.
+Synapse views are virtual tables created by querying one or more tables. They do not store data themselves, but they simplify complex queries and make them reusable. Views can be created over both dedicated and serverless SQL pools.
 
-## How to Dynamically Remove Space in field name
+## Dynamically remove spaces from names
 
-- For an overview of Serverless SQL Pool (built-in), please read this [overview](./0_serverlessSQLPool)
-- Please visit [Dedicated SQL Pool](./1_dedicatedSQLPoolStoreProc) (formerly SQL DW) for information.
-
-<!-- START BADGE -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1280-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-16</p>
-</div>
-<!-- END BADGE -->
+- Follow the [serverless SQL pool walkthrough](https://cloud2br-msftlearninghub.github.io/azSynapse-Dynamic-RemoveBlanks/serverless/) for external tables in a data lake.
+- Follow the [dedicated SQL pool walkthrough](https://cloud2br-msftlearninghub.github.io/azSynapse-Dynamic-RemoveBlanks/dedicated/) for provisioned data warehouse tables.
