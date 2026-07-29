@@ -1,6 +1,6 @@
 # Dedicated SQL Pool: Dynamically Remove Spaces
 
-<details>
+<details markdown="1">
 <summary><b>Table of contents</b> (click to expand)</summary>
 
 - [Set Up a Synapse Workspace](#set-up-a-synapse-workspace)

@@ -1,12 +1,12 @@
 # Azure Synapse: Dynamically Remove Spaces
 
 !!! important
-  These demos are intended as practical examples. For official guidance and support, refer to [Microsoft documentation](https://learn.microsoft.com/azure/synapse-analytics/) or [Microsoft Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME).
+    These demos are intended as practical examples. For official guidance and support, refer to [Microsoft documentation](https://learn.microsoft.com/azure/synapse-analytics/) or [Microsoft Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME).
 
 !!! note
-  The examples inspect table and column names, remove spaces, and create normalized views.
+    The examples inspect table and column names, remove spaces, and create normalized views.
 
-<details>
+<details markdown="1">
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [What is Azure Synapse Analytics?](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
@@ -16,7 +16,7 @@
   
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>Table of contents</b> (click to expand)</summary>
 
 - [Overview](#overview)
